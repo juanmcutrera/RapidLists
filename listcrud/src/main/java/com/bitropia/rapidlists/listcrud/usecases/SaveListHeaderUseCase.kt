@@ -1,4 +1,4 @@
-package com.bitropia.rapidlists.listcrud.domain.usecases
+package com.bitropia.rapidlists.listcrud.usecases
 import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
 
 

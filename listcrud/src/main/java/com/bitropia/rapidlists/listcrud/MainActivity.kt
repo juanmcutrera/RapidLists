@@ -26,7 +26,7 @@ import com.bitropia.rapidlists.listcrud.R
 import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
 import javax.inject.Inject
 
-import com.bitropia.rapidlists.listcrud.domain.usecases.SaveListHeaderUseCase
+import com.bitropia.rapidlists.listcrud.usecases.SaveListHeaderUseCase
 
 @AndroidEntryPoint
 class MainActivity @Inject constructor() : AppCompatActivity() {

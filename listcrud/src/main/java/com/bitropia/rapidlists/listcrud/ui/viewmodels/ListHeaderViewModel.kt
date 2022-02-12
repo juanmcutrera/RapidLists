@@ -2,7 +2,7 @@ package com.bitropia.rapidlists.listcrud.ui.viewmodels
 import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.*
-import com.bitropia.rapidlists.listcrud.domain.usecases.SaveListHeaderUseCase
+import com.bitropia.rapidlists.listcrud.usecases.SaveListHeaderUseCase
 import com.bitropia.rapidlists.listcrud.ui.common.ScopedViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
