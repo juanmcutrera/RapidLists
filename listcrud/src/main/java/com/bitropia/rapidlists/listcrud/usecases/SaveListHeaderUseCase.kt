@@ -1,7 +1,5 @@
 package com.bitropia.rapidlists.listcrud.usecases
 import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
-
-
 import com.bitropia.rapidlists.listcrud.data.repositories.ListHeaderRepository
 import javax.inject.Inject
 

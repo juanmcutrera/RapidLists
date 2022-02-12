@@ -2,7 +2,6 @@ package com.bitropia.rapidlists.listcrud
 
 import android.os.Bundle
 import android.widget.Toast
-import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
@@ -22,10 +21,9 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.Dp
-import com.bitropia.rapidlists.listcrud.R
-import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
 import javax.inject.Inject
 
+import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
 import com.bitropia.rapidlists.listcrud.usecases.SaveListHeaderUseCase
 
 @AndroidEntryPoint
