@@ -31,7 +31,7 @@ import com.bitropia.rapidlists.listcrud.usecases.SaveListHeaderUseCase
 class MainActivity @Inject constructor() : AppCompatActivity() {
     @Inject
     lateinit var saveListHeader : SaveListHeaderUseCase
-//aver
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
