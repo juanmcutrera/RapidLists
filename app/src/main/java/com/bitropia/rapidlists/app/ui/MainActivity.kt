@@ -1,4 +1,4 @@
-package com.bitropia.rapidlists.app
+package com.bitropia.rapidlists.app.ui
 
 import android.os.Bundle
 import android.widget.Toast
@@ -21,6 +21,7 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.Dp
+import com.bitropia.rapidlists.app.R
 import javax.inject.Inject
 
 import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
@@ -34,7 +35,9 @@ class MainActivity @Inject constructor() : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(
+            R.layout.activity_main
+        )
         setContent {
             MainContent(saveListHeader)
 
