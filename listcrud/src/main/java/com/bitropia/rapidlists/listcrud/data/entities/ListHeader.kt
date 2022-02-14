@@ -1,4 +1,4 @@
-package com.bitropia.rapidlists.listcrud.data.db
+package com.bitropia.rapidlists.listcrud.data.entities
 
 import androidx.annotation.NonNull
 import androidx.room.ColumnInfo

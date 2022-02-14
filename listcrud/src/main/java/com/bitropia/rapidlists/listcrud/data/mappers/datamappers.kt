@@ -1,6 +1,6 @@
 package com.bitropia.rapidlists.listcrud.data.mappers
 import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
-import com.bitropia.rapidlists.listcrud.data.db.ListHeader as DomainListHeader
+import com.bitropia.rapidlists.listcrud.data.entities.ListHeader as DomainListHeader
 
 
 fun ListHeader.toRoomListHeader(): DomainListHeader =
