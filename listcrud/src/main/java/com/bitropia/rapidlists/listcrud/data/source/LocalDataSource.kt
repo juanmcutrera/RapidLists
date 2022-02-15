@@ -3,6 +3,6 @@ import com.bitropia.rapidlists.listcrud.domain.entities.ListHeader
 
 interface LocalDataSource {
 
-    suspend fun saveListHeader(header: ListHeader): Long
+    suspend fun saveListHeader(listheader: ListHeader): Long
 
 }
