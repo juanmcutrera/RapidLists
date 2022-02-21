@@ -13,8 +13,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
-import com.bitropia.rapidlists.listcrud.ui.theme.RapidListsTheme
-import com.bitropia.rapidlists.listcrud.ui.theme.textField
+import com.bitropia.rapidlists.central.ui.theme.RapidListsTheme
+import com.bitropia.rapidlists.central.ui.theme.textField
 import com.bitropia.rapidlists.listcrud.ui.viewmodels.ListHeaderViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.compose.runtime.*

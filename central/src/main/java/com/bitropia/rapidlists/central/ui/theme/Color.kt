@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bitropia.rapidlists.listcrud.ui.theme
+package com.bitropia.rapidlists.central.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

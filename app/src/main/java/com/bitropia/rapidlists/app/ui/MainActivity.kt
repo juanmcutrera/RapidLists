@@ -5,7 +5,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -13,12 +16,13 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 
-import com.bitropia.rapidlists.listcrud.ui.theme.RapidListsTheme
-import com.bitropia.rapidlists.listcrud.ui.theme.textField
+import com.bitropia.rapidlists.central.ui.theme.RapidListsTheme
+import com.bitropia.rapidlists.central.ui.theme.textField
 import com.bitropia.rapidlists.listcrud.ui.viewmodels.ListHeaderViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.Dp
 import com.bitropia.rapidlists.app.R
@@ -83,7 +87,7 @@ fun MainScreen(
 
             Modifier
                 .fillMaxSize()
-                .padding(32.dp),
+                .padding(10.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         )
         {
@@ -99,8 +103,38 @@ fun MainScreen(
 
                 )
             val context = LocalContext.current
+            Spacer(modifier = Modifier.padding(8.dp))
 
-            Button(
+
+            Scaffold(
+
+                floatingActionButton = {
+                    ExtendedFloatingActionButton(
+                        text = { Text("Guardar") },
+                        shape = RoundedCornerShape(10),
+                        onClick = {
+                            Toast.makeText(
+                                context,
+                                "Guardando.... " + headerdescription,
+
+                                Toast.LENGTH_SHORT
+                            ).show()
+
+                            viewModel.saveListHeader(ListHeader(0,
+                                headerdescription))
+
+                                  },
+                        //shape = RectangleShape,
+
+
+                    )
+                }
+
+            ) {
+                // Screen content
+            }
+
+            /*Button(
 
                 onClick = {
 
@@ -114,14 +148,15 @@ fun MainScreen(
                    viewModel.saveListHeader(ListHeader(0,
                         headerdescription))
                 },
-                modifier = Modifier.padding(all = Dp(10F)),
+
+                modifier = Modifier.fillMaxWidth(),
                 enabled = true,
                 shape = MaterialTheme.shapes.medium,
             )
 
             {
                 Text(text = "Guardar", color = Color.White)
-            }
+            }*/
         }
     }
 }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bitropia.rapidlists.listcrud.ui.theme
+package com.bitropia.rapidlists.central.ui.theme
 
 
 import androidx.compose.material.Typography
@@ -23,7 +23,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.bitropia.rapidlists.listcrud.R
+import com.bitropia.rapidlists.central.R
 
 
 val MontserratFontFamily = FontFamily(

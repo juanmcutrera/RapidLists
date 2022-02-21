@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.bitropia.rapidlists.listcrud.ui.theme
+package com.bitropia.rapidlists.central.ui.theme
 
 
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -51,9 +51,9 @@ val DarkThemeColors = darkColors(
     primary = teal_200,
     primaryVariant = teal_700,
     onPrimary = Color.Black,
-    secondary = Color.Black,
+    //secondary = Color.Black,
     onSecondary = Color.White,
-    background = Color.Black,
+    //background = Color.Black,
     onBackground = Color.White,
     surface = Color.Black,
     onSurface = Color.White,
