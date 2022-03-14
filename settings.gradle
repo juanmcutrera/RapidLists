@@ -14,5 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "RapidLists"
 include ':app'
-include ':listcrud'
+//include ':listcrud'
 include ':central'
+include ':crudlist'

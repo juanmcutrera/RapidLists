@@ -53,7 +53,8 @@ dependencies {
 
     def room_version = "2.4.1"
 
-    implementation project(":listcrud")
+    implementation project(":crudlist")
+    //implementation project(":listcrud")
     implementation project(":central")
 
     implementation 'androidx.core:core-ktx:1.7.0'

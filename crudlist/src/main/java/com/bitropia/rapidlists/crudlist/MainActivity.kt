@@ -1,14 +1,11 @@
-package com.bitropia.rapidlists.app.ui
+package com.bitropia.rapidlists.crudlist
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Add
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -22,10 +19,8 @@ import com.bitropia.rapidlists.crudlist.ui.viewmodels.ListHeaderViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.Dp
-import com.bitropia.rapidlists.app.R
 import javax.inject.Inject
 
 import com.bitropia.rapidlists.crudlist.domain.entities.ListHeader
@@ -35,13 +30,11 @@ import com.bitropia.rapidlists.crudlist.usecases.SaveListHeaderUseCase
 class MainActivity @Inject constructor() : AppCompatActivity() {
     @Inject
     lateinit var saveListHeader : SaveListHeaderUseCase
-
+//aver
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(
-            R.layout.activity_main
-        )
+        setContentView(R.layout.activity_main)
         setContent {
             MainContent(saveListHeader)
 
@@ -87,7 +80,7 @@ fun MainScreen(
 
             Modifier
                 .fillMaxSize()
-                .padding(10.dp),
+                .padding(32.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         )
         {
@@ -103,38 +96,8 @@ fun MainScreen(
 
                 )
             val context = LocalContext.current
-            Spacer(modifier = Modifier.padding(8.dp))
 
-
-            Scaffold(
-
-                floatingActionButton = {
-                    ExtendedFloatingActionButton(
-                        text = { Text("Guardar") },
-                        shape = RoundedCornerShape(10),
-                        onClick = {
-                            Toast.makeText(
-                                context,
-                                "Guardando.... " + headerdescription,
-
-                                Toast.LENGTH_SHORT
-                            ).show()
-
-                            viewModel.saveListHeader(ListHeader(0,
-                                headerdescription))
-
-                                  },
-                        //shape = RectangleShape,
-
-
-                    )
-                }
-
-            ) {
-                // Screen content
-            }
-
-            /*Button(
+            Button(
 
                 onClick = {
 
@@ -148,15 +111,14 @@ fun MainScreen(
                    viewModel.saveListHeader(ListHeader(0,
                         headerdescription))
                 },
-
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier.padding(all = Dp(10F)),
                 enabled = true,
                 shape = MaterialTheme.shapes.medium,
             )
 
             {
                 Text(text = "Guardar", color = Color.White)
-            }*/
+            }
         }
     }
 }

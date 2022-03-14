@@ -13,7 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/central" />
-            <option value="$PROJECT_DIR$/listcrud" />
+            <option value="$PROJECT_DIR$/crudlist" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
