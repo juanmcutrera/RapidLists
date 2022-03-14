@@ -46,9 +46,9 @@ android {
 
 dependencies {
 
-    val room = "2.4.1"
-    val compose = "1.1.0"
-    val hilt = "2.40.5"
+    val room = "2.4.2"
+    val compose = "1.1.1"
+    val hilt = "2.41"
 
     implementation(project(":central"))
 

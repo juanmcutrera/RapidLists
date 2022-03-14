@@ -30,6 +30,7 @@ import javax.inject.Inject
 
 import com.bitropia.rapidlists.crudlist.domain.entities.ListHeader
 import com.bitropia.rapidlists.crudlist.usecases.SaveListHeaderUseCase
+//
 
 @AndroidEntryPoint
 class MainActivity @Inject constructor() : AppCompatActivity() {
