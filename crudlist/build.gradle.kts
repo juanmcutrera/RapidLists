@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 23
-        targetSdk = 32
+        targetSdk = 33
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -23,7 +23,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.1.0"
+        kotlinCompilerExtensionVersion = "1.3.2"
     }
 
     buildTypes {
@@ -47,8 +47,8 @@ android {
 dependencies {
 
     val room = "2.4.2"
-    val compose = "1.1.1"
-    val hilt = "2.41"
+    val compose = "1.3.2"
+    val hilt = "2.42"
 
     implementation(project(":central"))
 
@@ -60,7 +60,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
     implementation ("androidx.compose.ui:ui:$compose")
-    implementation ("androidx.compose.material:material:$compose")
+    implementation ("androidx.compose.material:material:1.3.1")
 
 
     implementation ("androidx.compose.ui:ui-tooling-preview:$compose")

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         minSdk = 23
-        targetSdk = 32
+        targetSdk = 33
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -35,20 +35,20 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.1.0"
+        kotlinCompilerExtensionVersion = "1.3.2"
     }
 }
 
 dependencies {
 
-    val compose = "1.1.1"
+    val compose = "1.3.2"
 
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.appcompat:appcompat:1.4.1")
     implementation("com.google.android.material:material:1.5.0")
 
     implementation ("androidx.compose.ui:ui:$compose")
-    implementation ("androidx.compose.material:material:$compose")
+    implementation ("androidx.compose.material:material:1.3.1")
     implementation ("androidx.compose.ui:ui-tooling-preview:$compose")
 
 
