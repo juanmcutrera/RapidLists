@@ -5,6 +5,8 @@ plugins {
     id 'dagger.hilt.android.plugin'
 
 
+
+
 }
 
 android {
@@ -47,11 +49,12 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+    namespace 'com.bitropia.rapidlists.app'
 }
 
 dependencies {
 
-    def room = "2.4.2"
+    def room = "2.4.3"
     def compose = "1.3.2"
     def hilt = "2.42"
 

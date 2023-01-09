@@ -42,11 +42,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    namespace = "com.bitropia.rapidlists.crudlist"
 }
 
 dependencies {
 
-    val room = "2.4.2"
+    val room = "2.4.3"
     val compose = "1.3.2"
     val hilt = "2.42"
 

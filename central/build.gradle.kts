@@ -37,6 +37,7 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.3.2"
     }
+    namespace = "com.bitropia.rapidlists.central"
 }
 
 dependencies {
