@@ -35,14 +35,15 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.3.2"
+        /*kotlinCompilerExtensionVersion = "1.3.2"*/
+        kotlinCompilerExtensionVersion = "1.4.3"
     }
     namespace = "com.bitropia.rapidlists.central"
 }
 
 dependencies {
 
-    val compose = "1.3.2"
+    val compose = "1.4.3"
 
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.appcompat:appcompat:1.4.1")

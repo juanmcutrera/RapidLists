@@ -23,7 +23,7 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.3.2"
+        kotlinCompilerExtensionVersion = "1.4.3"
     }
 
     buildTypes {
@@ -48,8 +48,8 @@ android {
 dependencies {
 
     val room = "2.4.3"
-    val compose = "1.3.2"
-    val hilt = "2.42"
+    val compose = "1.4.3"
+    val hilt = "2.48"
 
     implementation(project(":central"))
 
@@ -61,7 +61,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
 
     implementation ("androidx.compose.ui:ui:$compose")
-    implementation ("androidx.compose.material:material:1.3.1")
+    implementation ("androidx.compose.material:material:$compose")
 
 
     implementation ("androidx.compose.ui:ui-tooling-preview:$compose")
